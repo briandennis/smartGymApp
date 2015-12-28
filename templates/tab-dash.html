@@ -1,0 +1,61 @@
+<ion-view class="dark-background" view-title="Dashboard" hide-nav-bar="true">
+  <!-- <ion-nav-buttons side="primary">
+    <button class="button icon-center ion-plus-round button-clear" ng-click="addWorkout()">
+      Add Workout
+    </button>
+  </ion-nav-buttons> -->
+
+  <ion-content class="padding">
+
+    <div class="row upTop">
+      <div class="col text-center">
+        <img ng-src="./img/av.png" alt="" id="av">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+        <img ng-src="./img/logo.png" alt="" id="logo">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+        <p class="recent">RECENT WORKOUT</p>
+        <div id="recentText" ng-controller="DashCtrl">
+          {{ recentWorkout }}
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-50 text-center">
+        <p class="recent statLabel">MUSCLE INCREASE</p>
+        <div class="dashStat" ng-controller="DashCtrl">
+          {{ gains }}
+        </div>
+      </div>
+      <div class="col-50 text-center">
+        <p class="recent statLabel">CALORIES BURNED</p>
+        <div class="dashStat" ng-controller="DashCtrl">
+          {{ calories }}
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+    <div class="card">
+      <div class="item item-divider">
+        Exercises Per Workout
+      </div>
+      <div class="item item-text-wrap" ng-controller="GraphsCtrl">
+        <canvas id="line" class="chart chart-line" data="data" labels="labels" options="{showTooltips: false}" colours="colours"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a class="button icon-left ion-android-add" ng-click="addWorkout()">Add Workout</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
