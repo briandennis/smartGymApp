@@ -1,0 +1,108 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// overrides
+$base-background-color: #14274D !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+$montserrat-font-path: "../lib/ionic/fonts/monserrat" !default;
+@font-face {
+  font-family: "monserrat";
+  src: url("#{$montserrat-font-path}/Montserrat-Regular.ttf") format("truetype");
+}
+
+$font-family-sans-serif: "Monserrat-Regular", "Helvetica Neue", "Roboto", sans-serif !default;
+$font-family-serif: "Monserrat-Regular", "Helvetica Neue", "Roboto", sans-serif !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// -------- Dash --------
+
+#av {
+  height: 50px;
+}
+
+#logo {
+  height: 100px;
+}
+
+// recent section
+.recent {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: .4;
+}
+
+.statLabel {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.dashStat {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#recentText {
+  color: #fff;
+  font-size: 20px;
+}
+
+// add workout
+a.button {
+  text-align: center;
+  background: none;
+  color: white;
+}
+
+a.button:hover {
+  color: white;
+  opacity: .6;
+}
+
+#graph {
+
+}
+
+.upTop {
+  margin-top: -75px;
+}
+
+/* add-workout */
+
+.background-white {
+  background-color: #fff;
+}
+
+.button-steel-grey {
+  border: none;
+  border-radius: 2px;
+  background-color: #28223C !important;
+  color: white;
+}
+
+.button-steel-grey:active {
+  color: white;
+  background-color: #28223C !important;
+  opacity: .9;
+}
+
+

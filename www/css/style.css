@@ -1,0 +1,78 @@
+/* Empty. Add your own CSS if you like */
+
+/* fonts */
+body {
+  font-family: "Montserrat", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* Global */
+.dark-background {
+  background-color: #231B38;
+  color: white;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+}
+
+a.button {
+  text-align: center;
+  background: none;
+  color: white;
+}
+
+a.button:hover {
+  color: white;
+  opacity: .6;
+}
+
+.tabs-steel-grey {
+  background-color: #28223C !important;
+}
+
+
+/* dash */
+.recent {
+  font-weight: 700;
+  font-size: 14px;
+  opacity: .4;
+}
+
+.statLabel {
+  font-size: 10px;
+}
+
+.dashStat {
+  font-size: 42px;
+  font-weight: 300;
+  color:
+}
+
+#graph {
+
+}
+
+#av {
+  height: 50px;
+}
+
+.upTop {
+  margin-top: -75px;
+}
+
+#recentText {
+  font-size: 20px;
+}
+
+/* new-workout */
+.button-steel-grey {
+  font-family: "Montserrat";
+  border: none;
+  border-radius: 2px;
+  background-color: #28223C;
+  color: white;
+}
+
+.button-steel-grey:hover {
+  color: white;
+  opacity: .9;
+
+}

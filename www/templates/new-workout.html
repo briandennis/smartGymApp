@@ -1,0 +1,46 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view class="background-white" view-title="Add Workout">
+  <ion-content class="padding">
+    <br>
+    <p style="text-align: center;">Manually enter a workout below. And don't cheat now, cmon.</p>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Date</span>
+        <input id="date" type="datetime" placeholder="MM/DD/YYYY">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">Exercise</div>
+        <select id="exerciseSelect">
+          <option selected>Hip Abductor</option>
+          <option>Pull Down</option>
+          <option>Seated Cable Rows</option>
+          <option>Leg Extensions</option>
+        </select>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Reps</span>
+        <input id="reps" type="number" placeholder="Go hard or go home">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Weight</span>
+        <input id="weight" type="number" placeholder="Lbs">
+      </label>
+    </div>
+    <ion-list>
+      <ion-item class="item-remove-animate" ng-repeat="exercise in exercises" type="item-text-wrap">
+        <h2 style="float: left;">{{exercise.name}}</h2>
+        <p style="float: right;">{{exercise.reps}}</p>
+        <p style="float: right;">{{exercise.weight}}</p>
+      </ion-item>
+    </ion-list>
+
+    <button class="button button-block button-steel-grey" ng-click="addExercise()">Add Exercise</button>
+    <button class="button button-block button-steel-grey" ng-click="saveWorkout()">Complete Workout</button>
+  </ion-content>
+</ion-view>
